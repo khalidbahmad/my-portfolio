@@ -1,0 +1,39 @@
+html { 
+  scroll-behavior: smooth; 
+}
+
+body { 
+  margin: 0; 
+  font-family: 'Inter', sans-serif; 
+}
+
+/* --- Fond et texte principaux --- */
+.bg-background-light { background-color: #f8fafc; }
+.bg-background-dark { background-color: #0f172a; }
+
+.text-text-light-primary { color: #1e293b; }
+.text-text-dark-primary { color: #f8fafc; }
+
+/* --- Hover gris --- */
+.bg-gray-200:hover { background-color: #d1d5db; transition: background-color 0.2s ease; }
+.bg-gray-800:hover { background-color: #374151; transition: background-color 0.2s ease; }
+
+/* --- Hover texte --- */
+.text-gray-300 { transition: color 0.2s ease; }
+.dark-text-hover:hover { color: #60a5fa; }
+
+/* --- Cartes / boutons réutilisables --- */
+.custom-card, .custom {
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  background-color: #f8fafc; /* clair par défaut */
+  color: #1e293b;
+}
+
+/* Mode sombre */
+html.dark .custom-card, html.dark .custom {
+  background-color: #1f2937;
+  color: #f1f5f9;
+}
