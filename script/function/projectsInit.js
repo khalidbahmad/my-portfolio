@@ -14,7 +14,7 @@ export function initProjects() {
       tech: ['HTML', 'CSS', 'JavaScript', 'TailwindCSS'],
       link: '#'
     },{
-      src: './images/planit.png',
+      src: './images/image.png',
       title: 'planit',
       desc: 'Plan’It est une plateforme communautaire qui recrée du lien social authentique en simplifiant l’organisation et le partage d’activités réelles, sportives ou culturelles, au sein d’une communauté de confiance.',
       tech: ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'React',  'Laravel'],
