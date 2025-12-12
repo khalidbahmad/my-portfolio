@@ -13,12 +13,18 @@ export function initProjects() {
       desc: 'A modern personal portfolio built using HTML, CSS, JavaScript, and Tailwind CSS. Features smooth scrolling, responsive sections, and elegant UI animations.',
       tech: ['HTML', 'CSS', 'JavaScript', 'TailwindCSS'],
       link: '#'
+    },{
+      src: './images/planit.png',
+      title: 'planit',
+      desc: 'Plan’It est une plateforme communautaire qui recrée du lien social authentique en simplifiant l’organisation et le partage d’activités réelles, sportives ou culturelles, au sein d’une communauté de confiance.',
+      tech: ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'React',  'Laravel'],
+      link: '#'
     }
 
   ];
 
   // Define filters dynamically
- const filters = ['All Projects', 'JavaScript', 'React', 'Python', 'Laravel'];
+ const filters = ['All Projects', 'JavaScript', 'Java', 'Python', 'Laravel'];
 
   // Render filter buttons
   filters.forEach((filter, index) => {
