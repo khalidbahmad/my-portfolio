@@ -1,6 +1,7 @@
 export function initExperience() {
   const workTimeline = document.getElementById('work-timeline');
   const educationTimeline = document.getElementById('education-timeline');
+  const certificationsTimeline = document.getElementById('certifications-timeline');
 
   const education = [
     {
@@ -10,14 +11,27 @@ export function initExperience() {
       info: 'Currently studying full-stack web development with a focus on HTML, CSS, JavaScript, React, PHP (Laravel), Python, and databases.'
     }
   ];
-
+const certifications = [
+    {
+      degree: 'Python 101 for Data Science',
+      school: 'IBM',
+      date: 'February 26, 2025',
+      info: 'Certification in Python 101 for Data Science.'
+    },
+    {
+      degree: 'compition local de robotique',
+      school: 'club robotique de CMC Rabat',
+      date: 'February 26, 2025',
+      info: 'Certification de participation de compition local de robotique CLR.'
+    }
+  ];
   const workExperience = [
     {
-    role: 'Full-Stack Development Program',
-    company: 'Personal Project',
-    date: '1 months',
-    info: 'A platform where developers can create and manage personal portfolios with dynamic sections like About, Projects, and Skills. Features light/dark mode and public portfolio links.'
-  }
+      role: 'Full-Stack Development Program',
+      company: 'Personal Project',
+      date: '1 months',
+      info: 'A platform where developers can create and manage personal portfolios with dynamic sections like About, Projects, and Skills. Features light/dark mode and public portfolio links.'
+    }
   ];
 
   // Helper: Create timeline card with accent circle
@@ -96,5 +110,17 @@ export function initExperience() {
       index: i
     });
     educationTimeline.appendChild(card);
+  });
+
+  // Populate Certifications
+  certifications.forEach((item, i) => {
+    const card = createCardEducation({
+      date: item.date,
+      title: item.degree,
+      subtitle: item.school,
+      info: item.info,
+      index: i
+    });
+    certificationsTimeline.appendChild(card);
   });
 }

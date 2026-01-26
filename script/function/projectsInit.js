@@ -12,15 +12,24 @@ export function initProjects() {
       title: 'Portfolio Website',
       desc: 'A modern personal portfolio built using HTML, CSS, JavaScript, and Tailwind CSS. Features smooth scrolling, responsive sections, and elegant UI animations.',
       tech: ['HTML', 'CSS', 'JavaScript', 'TailwindCSS'],
-      link: '#'
-    },
-    {
-      src: './images/image.png',
+      link: '#',
+      etatLink:'View Project'
+    },{
+      src: "./images/Plan'It.png",
       title: 'Planit',
       desc: "Plan’It est une plateforme communautaire qui recrée du lien social authentique en simplifiant l’organisation et le partage d’activités réelles.",
       tech: ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'React', 'Laravel'],
-      link: 'https://github.com/khalidbahmad/planit'
+      link: 'https://github.com/khalidbahmad/planit',
+      etatLink:'Code source'
+    },{
+      src: './images/CampusStage.png',
+      title: 'CampusStage',
+      desc: "CampusStage est une plateforme web de recherche de stages pour étudiants, développée avec React, Laravel et SQL avancé. Elle permet de consulter, rechercher et postuler facilement aux offres de stage.",
+      tech: ['HTML', 'CSS', 'JavaScript', 'React', 'Laravel', 'SQL'],
+      link: 'https://github.com/khalidbahmad/CampusStage',
+      etatLink:'Code source'
     }
+
   ];
 
   // Filters
@@ -98,7 +107,7 @@ export function initProjects() {
           </div>
 
           <a href="${p.link}" class="inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition">
-            View Project
+            ${p.etatLink}
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
             </svg>
