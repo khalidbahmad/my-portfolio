@@ -77,7 +77,7 @@ export function contactSection(){
                                     <form id="contactForm">
                                         <div class="mb-6">
                                             <label for="name" class="block text-sm font-medium mb-2">Your Name</label>
-                                            <input type="text" id="name" name="name" placeholder="exomple" required class="themeF w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                            <input type="text" id="name" name="name" placeholder="your name" required class="themeF w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                         </div>
                                         <div class="mb-6">
                                             <label for="email" class="block text-sm font-medium mb-2">Your Email</label>
