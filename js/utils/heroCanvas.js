@@ -1,10 +1,13 @@
+// ============================================================
+// Hero Canvas — Particle animation
+// ============================================================
+
 export function initHeroCanvas() {
   const canvas = document.getElementById('heroCanvas');
-  if (!canvas) return; // sécurité si canvas introuvable
+  if (!canvas) return;
   const ctx = canvas.getContext('2d');
   let particles = [];
 
-  // Redimensionne le canvas
   function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -12,7 +15,6 @@ export function initHeroCanvas() {
   window.addEventListener('resize', resizeCanvas);
   resizeCanvas();
 
-  // Crée les particules
   function createParticles(count) {
     particles = [];
     for (let i = 0; i < count; i++) {
@@ -28,7 +30,6 @@ export function initHeroCanvas() {
   }
   createParticles(120);
 
-  // Relie les particules proches
   function connect() {
     for (let a = 0; a < particles.length; a++) {
       for (let b = a + 1; b < particles.length; b++) {
@@ -47,7 +48,6 @@ export function initHeroCanvas() {
     }
   }
 
-  // Animation principale
   function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     particles.forEach(p => {
