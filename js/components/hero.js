@@ -51,15 +51,14 @@ export function renderHero(data) {
             </svg>
             View CV
           </a>
-          <label class="btn btn-secondary" style="cursor:pointer;text-align:center;">
+          <a id="cvDownloadLink" href="#" download class="btn btn-secondary" style="text-align:center;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-              <polyline points="17 8 12 3 7 8"/>
-              <line x1="12" y1="3" x2="12" y2="15"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
-            Upload CV
-            <input id="cvUploadInput" type="file" accept=".pdf,.doc,.docx" style="display:none;" />
-          </label>
+            Download CV
+          </a>
           <p id="cvStatus" style="font-size:0.85rem;color:var(--text-muted);text-align:center;margin-top:0.5rem;"></p>
         </div>
       </div>
@@ -73,7 +72,7 @@ export function initHero(profileData) {
   const overlay = document.getElementById('cvModalOverlay');
   const closeBtn = document.getElementById('cvModalClose');
   const viewLink = document.getElementById('cvViewLink');
-  const uploadInput = document.getElementById('cvUploadInput');
+  const downloadLink = document.getElementById('cvDownloadLink');
   const cvStatus = document.getElementById('cvStatus');
 
   function openModal() { overlay?.classList.add('active'); }
@@ -87,35 +86,21 @@ export function initHero(profileData) {
 
   // Check for stored CV
   function updateCvLink() {
-    const storedCV = localStorage.getItem('portfolio_cv');
     const configUrl = profileData?.cv?.url;
 
-    if (storedCV) {
-      viewLink.href = storedCV;
-      viewLink.style.display = 'inline-flex';
-      cvStatus.textContent = 'CV uploaded ✓';
-    } else if (configUrl) {
+    if (configUrl) {
       viewLink.href = configUrl;
       viewLink.style.display = 'inline-flex';
+      downloadLink.href = configUrl;
+      downloadLink.style.display = 'inline-flex';
       cvStatus.textContent = '';
     } else {
       viewLink.style.display = 'none';
-      cvStatus.textContent = 'No CV uploaded yet. Upload one below.';
+      downloadLink.style.display = 'none';
+      cvStatus.textContent = 'No CV available.';
     }
   }
   updateCvLink();
-
-  // Upload
-  uploadInput?.addEventListener('change', (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = () => {
-      localStorage.setItem('portfolio_cv', reader.result);
-      updateCvLink();
-    };
-    reader.readAsDataURL(file);
-  });
 
   // Bounce animation
   if (!document.getElementById('bounce-keyframes')) {

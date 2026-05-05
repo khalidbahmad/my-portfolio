@@ -63,7 +63,7 @@
     ]
   },
   "cv": {
-    "url": "",
-    "filename": "Khalid_Bahmad_CV.pdf"
+    "url": "./assets/cv/cv.pdf",
+    "filename": "cv.pdf"
   }
 }
