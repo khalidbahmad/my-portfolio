@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Khalid",
+    "title": "Full-Stack Developer",
+    "ctaPrimary": { "text": "View My Work", "href": "#projects" },
+    "ctaSecondary": { "text": "Contact Me", "href": "#contact" }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Who I Am",
+    "paragraphs": [
+      "I'm a passionate Full-Stack Developer in training at CMC Rabat, where I'm developing strong skills in both front-end and back-end web development.",
+      "Through my studies at CMC Rabat, I've gained hands-on experience with modern web technologies, learning to build responsive, user-friendly interfaces and robust backend systems. I'm passionate about creating clean, efficient code and bringing ideas to life through innovative web solutions.",
+      "I'm constantly learning and exploring new tools to grow as a developer and stay up to date with the latest trends in web development."
+    ],
+    "specialties": [
+      {
+        "title": "Frontend",
+        "description": "Modern, responsive UI with React.js ,Bootstrap and Tailwind CSS",
+        "icon": "code"
+      },
+      {
+        "title": "Backend",
+        "description": "Laravel(php), JavaScript ,Python",
+        "icon": "server"
+      },
+      {
+        "title": "Database",
+        "description": "SQL, MongoDB",
+        "icon": "database"
+      },
+      {
+        "title": "UI/UX",
+        "description": "Intuitive interfaces with Figma",
+        "icon": "pen-tool"
+      }
+    ],
+    "techStack": [
+      { "name": "HTML5", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+      { "name": "CSS3", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+      { "name": "JavaScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { "name": "React", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { "name": "Tailwind CSS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
+      { "name": "MongoDB", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+      { "name": "PHP", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+      { "name": "Laravel", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" },
+      { "name": "Python", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "name": "MySQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind or want to collaborate? Feel free to reach out to me.",
+    "email": "khalidbahmad.dev@gmail.com",
+    "phone": "+212 708-433105",
+    "location": "Témara, Morocco",
+    "socialLinks": [
+      { "name": "GitHub", "url": "https://github.com/khalidbahmad", "icon": "github" },
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/khalid-bahmad", "icon": "linkedin" },
+      { "name": "Twitter", "url": "https://twitter.com", "icon": "twitter" },
+      { "name": "Instagram", "url": "https://instagram.com", "icon": "instagram" }
+    ]
+  },
+  "cv": {
+    "url": "./assets/cv/cv.pdf",
+    "filename": "cv.pdf"
+  }
+}

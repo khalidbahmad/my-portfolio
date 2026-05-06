@@ -1,0 +1,35 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "🌍 Plan’It\r   Recréer du lien social à travers des activités réelles, collaboratives et conviviales.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khalidbahmad/my-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khalidbahmad/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/khalidbahmad/my-portfolio#readme",
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-feather": "^2.0.10",
+    "react-router-dom": "^7.15.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.14",
+    "tailwindcss": "^3.4.19",
+    "vite": "^8.0.10"
+  }
+}
