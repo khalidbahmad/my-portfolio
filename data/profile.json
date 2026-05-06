@@ -115,7 +115,7 @@
     ]
   },
   "cv": {
-    "url": "../public/cv/cv.pdf",
+    "url": "/cv/cv.pdf",
     "filename": "cv.pdf"
   }
 }

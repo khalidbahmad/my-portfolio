@@ -25,7 +25,7 @@ async function init() {
   // Render HTML
   app.innerHTML = `
     ${renderHeader()}
-    <main style="padding-top:5rem;">
+    <main style="padding-top:5rem;">  
       ${renderHero(data.profile)}
       ${renderAbout(data.profile)}
       ${renderProjects()}
