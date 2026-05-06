@@ -63,7 +63,7 @@
     ]
   },
   "cv": {
-    "url": "./assets/cv/cv.pdf",
+    "url": "/cv/cv.pdf",
     "filename": "cv.pdf"
   }
 }
